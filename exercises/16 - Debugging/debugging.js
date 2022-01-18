@@ -1,3 +1,4 @@
+
 const people = [
   { name: 'Wes', cool: true, country: 'Canada' },
   { name: 'Scott', cool: true, country: 'Merica' },
@@ -5,16 +6,14 @@ const people = [
 ];
 
 people.forEach((person, index) => {
+
   console.log(person.name);
-  if (person.name === "wes"){
-    console.error("Dumb Name")
-  }
+  console.error(person.name); 
 });
 
-// Console Methods
 console.table(people);
 
-
+// Console Methods
 
 // Callstack
 
@@ -31,7 +30,7 @@ console.table(people);
 // Some Setup Code
 
 function doctorize(name) {
-  console.count('running Doctorize')
+  console.count('running Doctorize');
   return `Dr. ${name}`;
 }
 
@@ -43,6 +42,11 @@ function greet(name) {
 function go() {
   const name = doctorize(greet('Wes'));
   console.log(name);
+}
+
+function bootstrap(){
+  console.log('Starting the app');
+  go()
 }
 
 const button = document.querySelector('.bigger');

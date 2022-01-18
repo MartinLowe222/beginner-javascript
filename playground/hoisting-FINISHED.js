@@ -15,3 +15,5 @@ function sayHi() {
 function add(a, b) {
   return a + b;
 }
+
+// hoidting is varaible declarations and function declarations
