@@ -1,10 +1,17 @@
 // Make a div
-
+const div = document.createElement("div");
 // add a class of wrapper to it
-
+div.classList.add("wrapper");
 // put it into the body
+document.body.appendChild(div);
 
 // make an unordered list
+const ul = `<ul>
+<li>one</li>
+<li>two</li>
+<li>three</li>
+</ul>;
+`
 
 // add three list items with the words "one, two, three" in them
 // put that list into the above wrapper
