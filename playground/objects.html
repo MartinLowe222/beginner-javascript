@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="../base.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title></title>
-  <link rel="stylesheet" href="../base.css">
-</head>
+  <body>
+    <script>
+      // property on left value on the right, values can be anything
+      const age = 100;
+      const person = {
+        name: "Martin",
+        age,
+        "cool-dude": true,
+        "really-cool": false,
+        777: true,
+        clothing: {
+          shirts: 2,
+          shoes: 1,
+          trousers: 4,
+        },
+        // you can pass it as that age: age, as its the same
+      };
+      // to add a job after declare the object
+      person.job = "Software Engineer";
+      person.age = 50;
+      console.log(person);
 
-<body>
-  <script>
+      // you cant because the binding has already been created
+      // immutable cant change it the you can freeze that object with object.freeze
 
-  </script>
-</body>
+      const personFroze = object.freeze(person);
+      // ways to access property 1
+      console.log(person.age);
+      // second way to access property
+      console.log(person["age"]);
 
+      delete.
+    </script>
+  </body>
 </html>

@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>If Statements</title>
+    <link rel="stylesheet" href="../base.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>If Statements</title>
-  <link rel="stylesheet" href="../base.css">
-</head>
+  <body>
+    <script>
+      // the conditoon is inside ()
+      if (10 > 2) {
+        console.log("Yep");
+      } else if (11 > 10) {
+        console.log("yep");
+      }
 
-<body>
-  <script>
-    if (10 > 2) {
-      console.log('Yep');
-    }
-  </script>
-</body>
+      // it will pack up on the first one just remember your order and what you want to put it in
 
+      const age = 100;
+      if (age > 70) {
+        console.log("In your seventies");
+      } else if (age > 60) {
+        console.log("In your sixties");
+      } else if (age > 50) {
+        console.log("In your 50s");
+      } else {
+        console.log("Nothing was true");
+      }
+
+      // /\s/g, '-' this is regex you can remove the else and it will still work
+
+      function slugify(sentence, lowercase) {
+        let slug = sentence.replace(/\s/g, "-");
+        if (lowercase) {
+          return slug.toLowerCase();
+        }
+        return slug;
+      }
+      //const name = "martin";
+      const last = "lowe";
+
+      // we can use whats called a bang ! to say its not true
+
+      //name !== "david";
+
+      // the or operator is the || so below im saying if my name is martin or prince it is a cool name
+
+      const name = "martin";
+
+      if (name === "martin" || name === "prince") {
+        console.log("cool name !");
+      }
+
+      // we can also use the and which is &&
+
+      const last = "lowe";
+
+      if (last === "lowe" && last === "haastrup") {
+        console.log("cool name !");
+      }
+    </script>
+  </body>
 </html>
