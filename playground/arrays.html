@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title> </title>
+    <link rel="stylesheet" href="../base.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>
+  <body></body>
+  <script>
+    // no keys in arrays always indexs
+    const names = ["wes", "kait", "snickers"];
 
-  </title>
-  <link rel="stylesheet" href="../base.css">
-</head>
+    // it is a type of object as it stores data at the end of the day
+    // to access inside an array you can use index
+    console.log(names[0]);
 
-<body>
+    // 0 based in an array as arrays are 0 based.
 
-</body>
+    console.log(names.length);
 
+    // to find out how many we have we use length however length DOES NOT START AT ZERO
+
+    console.log(names[names.length - 1]);
+
+    // change the orginal version is a  mutation
+
+    // imuutable methods do not change the original but return a new array
+    // mutation method
+
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const numbersBackwards = numbers.reverse();
+
+    console.log(numbersBackwards);
+
+    console.log(numbers);
+
+    // the orginal method has changes
+
+    // any time you want to use a mitation method and not mutate the original array
+
+    // we need to take a copy of the array
+
+    const numbersReversed = [...numbers].reverse();
+    console.log(numbersReversed);
+
+    // numbers reverse ();
+
+    //IMMUTABLE THEY DO NOT CHANGE THE ORIGINAL DATA
+
+    const pizzaSlice = numbers.slice(2, 4);
+    console.log(pizzaSlice);
+    console.log(numbers);
+  </script>
 </html>
