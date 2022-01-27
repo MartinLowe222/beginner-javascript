@@ -192,6 +192,17 @@
 
       const orderTotalswithTax = orderTotals.map((total) => total * 1.13);
       console.log(orderTotalswithTax);
+
+      // get data and get ot to show how you want it
+
+      const cleanPeople = people.map(function (person) {
+        console.log(person);
+        // get their birthday
+        const birthday = new Date(person.birthday);
+        console.log(birthday);
+        //figure out how old they are
+        // return their full name and bday in an object
+      });
     </script>
   </body>
 </html>
