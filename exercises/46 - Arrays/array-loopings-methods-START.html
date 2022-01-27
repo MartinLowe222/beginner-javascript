@@ -156,6 +156,42 @@
       toppings.forEach(logTopping);
 
       //FOR EACH DOESNT RETURN ANYTHING
+      // MAP - TAKES IN DATA DOES SOMETHING AND SPITS IT OUT THE OTHER SIDE
+
+      function addArms(face) {
+        return `👋${face}👋`;
+      }
+
+      // add arms to the faces
+
+      const toys = faces.map(addArms);
+
+      console.log(toys);
+
+      // lets add surnames
+
+      const fullNames = ["wes", "kait", "poppy"].map((name) => `${name} bos`);
+      console.log(fullNames);
+
+      // lets do this through a function
+
+      function bosify(name) {
+        return `${name} Bos`;
+      }
+
+      function capitalize(word) {
+        return `${word[0].toUpperCase()}${word.slice(1)}`;
+      }
+
+      // lets add it
+
+      const fullNames = ["wes", "kait", "poppy"].map(capitalize).map(bosify);
+      console.log(fullNames);
+
+      // add tax
+
+      const orderTotalswithTax = orderTotals.map((total) => total * 1.13);
+      console.log(orderTotalswithTax);
     </script>
   </body>
 </html>
