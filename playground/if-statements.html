@@ -41,6 +41,11 @@
       //const name = "martin";
       const last = "lowe";
 
+      const isAwesomeName = "awesome".includes(name);
+      if (isAwesomeName) {
+        console.log("SUPER COOL AWESOME NAME");
+      }
+
       // we can use whats called a bang ! to say its not true
 
       //name !== "david";
@@ -65,6 +70,19 @@
       const word = count === 1 ? "item" : "items";
       const sentence = `You have ${count} ${word} in your cart`;
       console.log(sentence);
+
+      function AdminBar() {
+        console.log("show admin bar");
+      }
+
+      const isAdmin = true;
+      isAdmin ? showAdminBar() : null;
+
+      // we can use && for one condition
+      // if we say is admin set to false
+
+      const isAdmin = false;
+      isAdmin && showAdminBar();
     </script>
   </body>
 </html>

@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Event Loop</title>
+    <link rel="stylesheet" href="../base.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Event Loop</title>
-  <link rel="stylesheet" href="../base.css">
-</head>
+  <body>
+    <div class="go">Click Me</div>
+    <script>
+      // js sees this call back and goes i come back after 2 seconds, this is called the call stack, js will queue up the call back even if its 0 seconds
+      //js is single threaded if its multiple things queued up
+      console.log("Starting");
+      setTimeout(function () {
+        console.log("Running");
+      }, 2000);
+      console.log("Ending");
 
-<body>
-  <script>
+      const go = document.querySelector(".go");
+      // change the text to go when clicked
 
-  </script>
-</body>
-
+      go.addEventListener("click", function (e) {
+        const el = e.currentTarget;
+        el.textContent = "Go!";
+        console.log(el);
+      });
+    </script>
+  </body>
 </html>
